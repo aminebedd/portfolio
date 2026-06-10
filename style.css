@@ -1022,3 +1022,199 @@ body::after {
     justify-content: center;
   }
 }
+
+/* Project subtitle shown on project cards */
+.project-subtitle-card {
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Project detail page */
+.back-link {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.project-hero {
+  padding: 160px 0 60px;
+  text-align: center;
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.project-subtitle {
+  color: var(--accent);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.project-hero-desc {
+  color: var(--muted);
+  max-width: 800px;
+  margin: 0 auto 30px;
+  line-height: 1.8;
+}
+
+.project-hero .project-tech,
+.project-hero .project-links {
+  justify-content: center;
+}
+
+.problem-solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.ps-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 56, 56, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+}
+
+.ps-card h3 {
+  color: var(--accent);
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.ps-card p {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 56, 56, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px rgba(255, 56, 56, 0.15);
+}
+
+.feature-icon {
+  width: 36px;
+  height: 36px;
+  color: var(--accent);
+  margin-bottom: 15px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feature-card h3 {
+  color: var(--text);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.techstack-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.techstack-group {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 56, 56, 0.2);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.techstack-group h3 {
+  color: var(--accent);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.screenshots-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.screenshot-placeholder {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px dashed rgba(255, 56, 56, 0.3);
+  border-radius: 12px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.challenges-list {
+  list-style: none;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.challenges-list li {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 56, 56, 0.2);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  padding: 20px 25px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .problem-solution-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 140px 0 40px;
+  }
+
+  .project-hero h1 {
+    font-size: 2.2rem;
+  }
+}
