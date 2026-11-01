@@ -1,37 +1,36 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beddani Mohamed — Computer Science student and full-stack / mobile developer from Mostaganem, Algeria.">
     <title>Beddani Mohamed</title>
-    <link rel="icon" type="Image/jpeg" href="icon.jpg">
+    <link rel="icon" type="image/jpeg" href="icon.jpg">
+    <script src="theme.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="navbar">
-    <nav class="nav-container animate-on-scroll slide-in-top">
-            <div class="logo">
-                Mohamed<span class="logo-accent">-dev</span>
-            </div>
-            
+        <nav class="nav-container">
+            <a href="#home" class="logo">Mohamed<span class="logo-accent">-dev</span></a>
+
             <ul class="nav-menu" id="nav-menu">
                 <li><a href="#home" class="nav-link active">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            
-            <div class="nav-social">
-              
-                
-        
 
-            </div>
-            
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light / dark mode">
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+                </button>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -42,67 +41,40 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <p class="greeting">Hello, I'm Beddani Mohamed 👋</p>
-                        <h1 class="hero-title">
-                            <span id="typing-text">Computer Science</span>
-                            <span class="cursor">|</span>
-                        </h1>
-                        <p class="hero-quote">Expanding skills and discovering new ways to innovate</p>
-                        
+                        <h1 class="hero-title">Full-Stack &amp; <span class="highlight">Mobile Developer</span></h1>
+                        <p class="hero-quote">Computer Science student building real products for real businesses — web platforms, mobile apps and offline desktop systems.</p>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary">View Projects</a>
+                            <a href="Science and Engineering Resume in White Black Simple Style (1).pdf" class="btn btn-outline" target="_blank">Download CV</a>
+                        </div>
+
                         <div class="hero-social">
-                            <a href="https://www.linkedin.com/in/mohamed-beddani-69705a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" aria-label="LinkedIn" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
+                            <a href="https://www.linkedin.com/in/mohamed-beddani-69705a28b" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             </a>
-                            
-                            <a href="https://wa.me/213554139526" class="social-link" aria-label="WhatsApp" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                                </svg>
+                            <a href="https://wa.me/213662257405" class="social-link" aria-label="WhatsApp" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/></svg>
                             </a>
-                            <a href="https://github.com/aminebedd" class="social-link" aria-label="GitHub" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
+                            <a href="https://github.com/aminebedd" class="social-link" aria-label="GitHub" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                             </a>
                         </div>
                     </div>
-                            <div class="hero-visual">
-                                <div class="avatar-container">
-                                    <!-- Matahari (Sun) - Elemento visual central -->
-                                    <div class="sun-core">
-                                        <img src="mohamed.jpg" alt="Sun Image">
-                                    </div>
 
-                                    <button class="orbit-icon html random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon css random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon js random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon react random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="React Icon" style="width: 90%; height: 90%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon nodejs random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon python random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-
-                                    <button class="orbit-icon git random-orbit" type="button">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Icon" style="width: 100%; height: 100%; object-fit: contain;">
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="hero-visual">
+                        <div class="avatar">
+                            <img src="mohamed.jpg" alt="Beddani Mohamed" width="280" height="280">
+                        </div>
+                        <div class="tech-icons">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" title="Flutter" loading="lazy" width="40" height="40">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" loading="lazy" width="40" height="40">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" loading="lazy" width="40" height="40">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" loading="lazy" width="40" height="40">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" loading="lazy" width="40" height="40">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" loading="lazy" width="40" height="40">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -111,32 +83,42 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <div class="about-content">
-                    <div class="about-text slide-in-left">
-                <p>I'm Mohamed, a computer science student exploring diverse fields of technology - from software and web development to artificial intelligence solutions. My goal is to continuously grow my skills and expand my horizons.</p>
+                    <div class="about-text">
+                        <p>I'm Mohamed, a computer science student from Mostaganem, Algeria. I build complete products — from Django and Node.js back-ends to Next.js web apps, Flutter mobile apps and offline desktop systems — and several of them are already used by real schools and shops.</p>
                         <div class="skills">
-                            <h3>Skills & Technologies</h3>
+                            <h3>Skills &amp; Technologies</h3>
                             <div class="skills-grid">
-                                <span class="skill-tag">HTML</span>
-                                <span class="skill-tag">CSS</span>
-                                <span class="skill-tag">JavaScript</span>
-                                <span class="skill-tag">Flutter</span>
-                                <span class="skill-tag">Node.js</span>
-                                <span class="skill-tag">Git</span>
-                                <span class="skill-tag">Sql</span>
-                                <span class="skill-tag">MongoDB</span>
-                                <span class="skill-tag">java</span>
+                                <span class="skill-tag">HTML / CSS</span>
+                                <span class="skill-tag">JavaScript / TypeScript</span>
+                                <span class="skill-tag">React</span>
+                                <span class="skill-tag">Next.js</span>
+                                <span class="skill-tag">Node.js / Express</span>
+                                <span class="skill-tag">Django / DRF</span>
+                                <span class="skill-tag">Flutter / Dart</span>
+                                <span class="skill-tag">GetX</span>
+                                <span class="skill-tag">Electron</span>
+                                <span class="skill-tag">Java / JavaFX</span>
                                 <span class="skill-tag">Python</span>
-                                
+                                <span class="skill-tag">SQL / MySQL / SQLite</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Supabase</span>
+                                <span class="skill-tag">Git</span>
                             </div>
                         </div>
                     </div>
-                    <div class="about-visual slide-in-right">
-                        <div class="code-animation">
-                            <div class="code-line">const developer = {</div>
-                            <div class="code-line indent">name: 'Beddani Mohamed',</div>
-                            <div class="code-line indent">role: 'Computer Science Student',</div>
-                            <div class="code-line indent">passion: 'Expanding skills and discovering new ways to innovate'</div>
-                            <div class="code-line">};</div>
+                    <div class="about-visual">
+                        <div class="code-block">
+                            <div><span class="k">const</span> developer = {</div>
+                            <div class="indent">name: <span class="s">'Beddani Mohamed'</span>,</div>
+                            <div class="indent">role: <span class="s">'Computer Science Student'</span>,</div>
+                            <div class="indent">location: <span class="s">'Mostaganem, Algeria'</span>,</div>
+                            <div class="indent">builds: [<span class="s">'web'</span>, <span class="s">'mobile'</span>, <span class="s">'desktop'</span>]</div>
+                            <div>};</div>
+                        </div>
+                        <div class="stats">
+                            <div class="stat"><strong>9</strong><span>Projects</span></div>
+                            <div class="stat"><strong>3</strong><span>Platforms</span></div>
+                            <div class="stat"><strong>15</strong><span>Technologies</span></div>
                         </div>
                     </div>
                 </div>
@@ -146,121 +128,156 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
-                <div class="projects-grid slide-in-up">
-                    <div class="project-card">
+
+                <div class="project-filters" role="group" aria-label="Filter projects">
+                    <button class="filter-btn active" type="button" data-filter="all">All</button>
+                    <button class="filter-btn" type="button" data-filter="web">Web</button>
+                    <button class="filter-btn" type="button" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" type="button" data-filter="desktop">Desktop</button>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card" data-category="web mobile">
                         <div class="project-image">
-                            <img src="image.jpg" alt="ExcellenceSchool">
+                            <img src="image.jpg" alt="ExcellenceSchool" loading="lazy">
                         </div>
                         <div class="project-content">
                             <h3>ExcellenceSchool</h3>
-                            <p class="project-subtitle-card">School Management System</p>
-                            <p>A complete school management platform for Algerian private schools, covering all levels from 1ère Année Primaire to 3ème BAC. Separate dashboards for Admin, Teacher, and Student roles automate attendance, scheduling, and subscription plans.</p>
+                            <p class="project-subtitle-card">School Management System · Web + Mobile</p>
+                            <p>A complete school management platform for Algerian private schools, covering all levels from 1ère Année Primaire to 3ème BAC. Separate dashboards for Admin, Teacher and Student automate attendance, scheduling and subscription plans, with a companion Flutter app for students and teachers.</p>
                             <div class="project-tech">
                                 <span>Next.js</span>
                                 <span>Django</span>
                                 <span>REST API</span>
-                                <span>Full-Stack</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="excellenceschool.html" class="project-link">Details</a>
-                                <a href="#" class="project-link">GitHub</a>
-                                <a href="https://excellence-school.vercel.app/" class="project-link" target="_blank">Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="app1.png" alt="Project 3">
-                        </div>
-                        <div class="project-content">
-                            <h3>FOOD DELIVERY APP</h3>
-                            <p>A sleek food delivery app with login authentication, product browsing, favorites, and cart checkout features.</p>
-                            <div class="project-tech">
                                 <span>Flutter</span>
-                                <span>Node.js</span>
-                                <span>MongoDB</span>
+                                <span>GetX</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-
+                                <a href="https://excellence-school.vercel.app/" class="project-link primary" target="_blank" rel="noopener">Live Demo</a>
+                                <a href="excellenceschool.html" class="project-link">Details</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card">
+                    </article>
+
+                    <article class="project-card" data-category="web">
                         <div class="project-image">
-                            <img src="photo_2026-06-10_21-40-05.jpg" alt="AbsenceFlow">
+                            <img src="image copy.png" alt="Door Decor" loading="lazy">
                         </div>
                         <div class="project-content">
-                            <h3>AbsenceFlow — Academic Absence Management</h3>
-                            <p>A full-stack web and mobile platform built for ESI Sidi Bel-Abbès that automates student attendance through time-limited QR codes with GPS-based fraud prevention. Includes role-based dashboards for Admin, Teacher, and Student, remote absence justification, timetable/exam scheduling, and attendance analytics.</p>
+                            <h3>Door Decor</h3>
+                            <p class="project-subtitle-card">Dual-Channel Door Sales Platform</p>
+                            <p>A full-stack commerce platform for a door retail business that unifies online sales and in-store operations: a storefront for browsing, ordering and tracking deliveries, plus an internal POS dashboard for walk-in sales, inventory, promotions and revenue reports.</p>
                             <div class="project-tech">
                                 <span>Next.js</span>
-                                <span>React</span>
                                 <span>Django</span>
                                 <span>MySQL</span>
-                                <span>JWT</span>
-                                <span>QR Code</span>
-                                <span>GPS API</span>
+                                <span>Tailwind CSS</span>
+                                <span>Chart.js</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">Live Demo</a>
-
+                                <a href="https://doordecormost.com" class="project-link primary" target="_blank" rel="noopener">Live Demo</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="project-card">
+                    </article>
+
+                    <article class="project-card" data-category="web mobile">
                         <div class="project-image">
-                            <img src="image.png" alt="Medical Clinic Queue Management System">
+                            <img src="photo_2026-06-10_21-40-05.jpg" alt="AbsenceFlow" loading="lazy">
                         </div>
                         <div class="project-content">
-                            <h3>Medical Clinic Queue Management System</h3>
+                            <h3>AbsenceFlow</h3>
+                            <p class="project-subtitle-card">Academic Absence Management · ESI Sidi Bel-Abbès</p>
+                            <p>A web and mobile platform that automates student attendance with time-limited QR codes and GPS-based fraud prevention. Role-based dashboards, remote absence justification, timetable / exam scheduling and attendance analytics.</p>
+                            <div class="project-tech">
+                                <span>Next.js</span>
+                                <span>Django</span>
+                                <span>MySQL</span>
+                                <span>Flutter</span>
+                                <span>JWT</span>
+                                <span>QR + GPS</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop mobile">
+                        <div class="project-image">
+                            <img src="autostock.jpg" alt="AutoStock dashboard" loading="lazy" style="object-position: right top;">
+                        </div>
+                        <div class="project-content">
+                            <h3>AutoStock — Auto Parts Store</h3>
+                            <p class="project-subtitle-card">Offline POS &amp; Inventory · Desktop + Mobile</p>
+                            <p>An offline point-of-sale for an Algerian auto spare-parts shop: barcode-scanner checkout, stock management, profit tracking, low-stock alerts and printed tickets, with amounts in DA and an Arabic (RTL) / French interface switchable on the fly. Available as a Windows/Linux desktop app and a Flutter mobile app.</p>
+                            <div class="project-tech">
+                                <span>Electron</span>
+                                <span>React</span>
+                                <span>SQLite (WASM)</span>
+                                <span>Flutter</span>
+                                <span>Drift</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="hanouti.jpg" alt="Hanouti app screens" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Hanouti — Grocery Store App</h3>
+                            <p class="project-subtitle-card">Offline Mobile POS · Arabic UI</p>
+                            <p>A fully offline app for small grocery store owners: inventory, point of sale by barcode, weight (per kg) or per piece, sales history and low-stock / expiry notifications, protected by an offline device-activation lock.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>GetX</span>
+                                <span>Hive</span>
+                                <span>Barcode Scanner</span>
+                                <span>Notifications</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="optica.jpg" alt="OPTICA storefront" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>OPTICA — Optical Boutique</h3>
+                            <p class="project-subtitle-card">E-commerce Storefront + Admin Back Office</p>
+                            <p>A premium online store for an optician: product collection, cart and guest checkout, prescription uploads with each order, and an admin back office to manage products and orders. Interface available in Arabic and French.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Vite</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>Multer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop">
+                        <div class="project-image">
+                            <img src="image.png" alt="Medical Clinic Queue Management System" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Medical Clinic Queue System</h3>
                             <p class="project-subtitle-card">Desktop App · Windows</p>
-                            <p>A Windows desktop app for medical clinic receptions with a dual-screen setup: the receptionist registers patients and manages the queue, while a second screen shows the live waiting number on a TV. Each registration prints a numbered ticket, with daily statistics, thermal printer support, and real-time sound alerts, all running on a local SQLite database.</p>
+                            <p>A dual-screen reception app: the receptionist registers patients and manages the queue while a TV shows the live waiting number. Numbered ticket printing, thermal printer support, sound alerts and daily statistics on a local SQLite database.</p>
                             <div class="project-tech">
                                 <span>Flutter</span>
                                 <span>Dart</span>
                                 <span>Windows Desktop</span>
                                 <span>SQLite</span>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link">GitHub</a>
-
-                            </div>
                         </div>
-                    </div>
-                    <div class="project-card">
+                    </article>
+
+                    <article class="project-card" data-category="desktop">
                         <div class="project-image">
-                            <img src="image copy.png" alt="Door Decor">
+                            <img src="image copy 2.png" alt="Wood Stock" loading="lazy">
                         </div>
                         <div class="project-content">
-                            <h3>Door Decor</h3>
-                            <p class="project-subtitle-card">Dual-Channel Door Sales Platform</p>
-                            <p>A full-stack commerce platform for a door retail business that unifies online sales and in-store operations in one system. A customer-facing storefront for browsing the catalog, ordering, and tracking deliveries runs alongside an internal POS-style dashboard for employees to handle walk-in sales, inventory, and promotions, with an analytics dashboard for revenue and sales reports.</p>
-                            <div class="project-tech">
-                                <span>Next.js</span>
-                                <span>React</span>
-                                <span>Django</span>
-                                <span>MySQL</span>
-                                <span>REST API</span>
-                                <span>Tailwind CSS</span>
-                                <span>Chart.js</span>
-                            </div>
-                            <div class="project-links">
-
-                                <a href="https://doordecormost.com" class="project-link" target="_blank">Live Demo</a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="image copy 2.png" alt="WoodDesk">
-                        </div>
-                        <div class="project-content">
-                            <h3>Wood stock</h3>
-                            <p class="project-subtitle-card">Lumber Store Management System · Desktop App</p>
-                            <p>An offline desktop POS system delivered to a real lumber retail business, replacing manual paper-based sales and stock tracking. It handles daily sales, professional invoice printing, inventory by wood type/dimension/price, customer and supplier records, low-stock alerts, and financial reports — all running locally without an internet connection.</p>
+                            <h3>Wood Stock</h3>
+                            <p class="project-subtitle-card">Lumber Store Management · Desktop App</p>
+                            <p>An offline POS delivered to a real lumber business, replacing paper-based sales and stock: daily sales, invoice printing, inventory by wood type / dimension / price, customers and suppliers, low-stock alerts and financial reports.</p>
                             <div class="project-tech">
                                 <span>JavaFX</span>
                                 <span>Java</span>
@@ -268,60 +285,50 @@
                                 <span>JDBC</span>
                                 <span>JasperReports</span>
                             </div>
-                            <div class="project-links">
-                                <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </article>
 
+                    <article class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="app1.png" alt="Food Delivery App" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>Food Delivery App</h3>
+                            <p class="project-subtitle-card">Mobile App</p>
+                            <p>A sleek food delivery app with login authentication, product browsing, favorites and cart checkout.</p>
+                            <div class="project-tech">
+                                <span>Flutter</span>
+                                <span>Node.js</span>
+                                <span>MongoDB</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
+            </div>
         </section>
 
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="contact-content">
-                    <div class="contact-info slide-in-left">
-                        <p>Let's collaborate! I am always open to discussing exciting projects and new opportunities.</p>
+                    <div class="contact-info">
+                        <p>Let's collaborate! I'm always open to discussing new projects and opportunities.</p>
                         <div class="contact-details">
-                            <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                                </svg>
+                            <a class="contact-item" href="mailto:mbeddani00@gmail.com">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                                 <span>mbeddani00@gmail.com</span>
-                            </div>
+                            </a>
+                            <a class="contact-item" href="tel:+213662257405">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                                <span>+213 662 25 74 05</span>
+                            </a>
                             <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M6.62 10.79c1.44 2.83 3.76 5.15 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
-                                </svg>
-                                <span>+213 0662257405</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                                <span>Mostaganem, Algeria</span>
                             </div>
-                            <div class="contact-item">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                                </svg>
-                                <span>Algeria, mostaganem</span>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://github.com/aminebedd" class="social-link" aria-label="GitHub" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mohamed-beddani-69705a28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" aria-label="LinkedIn" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                                </svg>
-                            </a>
-                            <a href="https://wa.me/213662257405" class="social-link" aria-label="WhatsApp" target="_blank">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
-                                </svg>
-                            </a>
                         </div>
                     </div>
-                    <div class="contact-form slide-in-right">
+                    <div class="contact-form">
                         <form id="contact-form">
                             <div class="form-group">
                                 <input type="text" placeholder="Your Name" required name="user_name">
@@ -332,21 +339,20 @@
                             <div class="form-group">
                                 <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="glow-genz-button">Send Message</button>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                            <p class="form-status" id="form-status" aria-live="polite"></p>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
-    <script src="script.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-   (function(){
-      emailjs.init("YOUR_PUBLIC_KEY"); 
-   })();
-</script>
+
+    <footer class="footer">
+        <div class="container">© 2026 Beddani Mohamed</div>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-       
